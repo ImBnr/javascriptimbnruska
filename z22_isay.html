@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function poletrojkata(a,h){
+            let wys = h;
+            let pod = a;
+            const pol = 1/2;
+            
+            let pole = wys * pod * pol;
+            document.getElementsByName('obj')[0].value = pole.toFixed(2);
+            alert("P=" + pole.toFixed(2) + " cm^2");
+            pokaz1.innerHTML = "P=" + pole.toFixed(2) + " cm^2" + "<br>";
+        }
+        function obwodtrojkata(a,h){
+            let y = Number(a);
+            let x = Number(h);
+            let c = Math.sqrt(x*x+y*y);
+            let obwoda = c+x+y;
+
+            document.getElementsByName('pole')[0].value = obwoda.toFixed(2);
+            alert("Obwod=" + obwoda.toFixed(2)+ " cm");
+            pokaz2.innerHTML = "Obwod= " + obwoda.toFixed(2) + " cm" + "<br>";
+        }
+    </script>
+</head>
+<body>
+    <form name="formularz" action="..." onsubmit="poletrojkata(this.a.value,this.h.value); obwodtrojkata(this.a.value, this.h.value);return false">
+        Podaj a=
+        <input size="6" name="a">
+        Podaj h=
+        <input size="6" name="h">
+        <br> <br>
+        <input TYPE="submit" Value="oblicz">
+        <br> <br>
+        P=
+        <input size="6" name="obj">
+        Obwod=
+        <input size="6" name="pole">
+    </form>
+    <table>
+        <tr id="pokaz1"></tr>
+        <tr id="pokaz2"></tr>
+    </table>
+    </form>
+</body>
+</html>
