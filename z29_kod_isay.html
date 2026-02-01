@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="90" cols="170">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: square;
+        }
+        li,
+        p {
+            font-weight: bold;
+        }
+        .centriruem{
+            margin: 1.5%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centriruem">
+    <h3>1. W jaki sposób można określić właściwość danego obiektu (dwa sposoby wraz z przykładami)?</h3>
+    <ul>
+        <li>kropka: <code>object.property</code> np. <code>car.color</code></li>
+        <li>nawiasy: <code>object['property']</code> np. <code>car['color']</code></li>
+    </ul>
+    <h3>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</h3>
+    <p>Poprzez kropkę lub nawiasy kwadratowe: <br>
+       <code>object.property</code> lub <code>object.method()</code> <br>
+       <code>object['property']</code> lub <code>object['method']()</code>
+    </p>
+    <h3>3. Wymień cechy charakterystyczne konstruktora</h3>
+    <ul>
+        <li>Tworzy i inicjalizuje nowy obiekt</li>
+        <li>Wywoływany automatycznie przy użyciu <code>new</code></li>
+        <li>Może przyjmować parametry do ustawienia właściwości</li>
+    </ul>
+    <h3>4. Konstruowanie obiektu na podstawie przykładu</h3>
+    <p>
+        <code>
+        function Person(name, age, city) {<br>
+        &nbsp;&nbsp;this.name = name;<br>
+        &nbsp;&nbsp;this.age = age;<br>
+        &nbsp;&nbsp;this.city = city;<br>
+        &nbsp;&nbsp;this.greet = function() { console.log("Hello!"); }<br>
+        }<br>
+        const user = new Person("Jan", 25, "Warsaw");<br>
+        </code>
+    </p>
+    <h3>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody?</h3>
+    <p><code>this</code> odnosi się do aktualnego obiektu. <br> Pola i metody oddzielamy kropką: <code>object.property</code> lub <code>object.method()</code></p>
+    <h3>6. Konstruktor w JS na podstawie przykładu wraz z opisem</h3>
+    <p>
+        <code>
+        function Car(model, year) {<br>
+        &nbsp;&nbsp;this.model = model; // właściwość<br>
+        &nbsp;&nbsp;this.year = year;   // właściwość<br>
+        &nbsp;&nbsp;this.start = function() { console.log("Start"); } // metoda<br>
+        }<br>
+        const myCar = new Car("Toyota", 2020);<br>
+        </code>
+        <br>Konstruktor tworzy nowy obiekt <code>myCar</code> i inicjalizuje jego właściwości i metody.
+    </p>
+    <h3>7. Znaczenie słowa kluczowego new wraz z przykładem</h3>
+    <p><code>new</code> tworzy nową instancję obiektu i wywołuje konstruktor. <br>
+       Przykład: <code>const obj = new Car("Honda", 2019);</code></p>
+    <h3>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem</h3>
+    <p><b><code>prototype</code></b> pozwala dodawać właściwości i metody wspólne dla wszystkich instancji danej klasy.<br>
+       Przykład: <br>
+       <code>
+       Car.prototype.drive = function() { console.log("Driving"); };<br>
+       const car1 = new Car("Ford", 2021);<br>
+       car1.drive(); // "Driving"
+       </code>
+    </p>
+    </div>
+</body>
+
+</html>
+    </textarea>
+</body>
+</html>

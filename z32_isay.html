@@ -1,0 +1,29 @@
+<html>
+
+<head>
+   <script type="text/javascript">
+      function pudelko(kolor_i, rozmiar_i, material_i)
+      {
+         this.kolor = kolor_i;
+         this.rozmiar = rozmiar_i;
+         this.material = material_i;
+      }
+      pudelko.prototype.wypisz = function () 
+      {
+         alert(this.kolor + ' ' + this.rozmiar + ' ' + this.material);
+      };
+      var pudelko1 = new pudelko("różowy", "12x5x10", "karton"); 
+      var pudelko2 = new pudelko('czerwony', '5x5x5', 'żelazo');
+      pudelko1.wypisz(); 
+      pudelko2.wypisz();
+      document.write("dostęp do właściwości" + "<br>");
+      document.write("pudelko pierwsze" + "   " + pudelko1.kolor + "   " + pudelko1.rozmiar + "   " + pudelko1.material); 
+   </script>
+</head>
+
+<body>
+   <br>
+   programowanie obiektowe
+</body>
+
+</html>
