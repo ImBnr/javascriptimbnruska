@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea cols="120" rows="87">
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Isayeu Z41</title>
+    <meta_isa charset="utf-8">
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Proste działania</h1>
+    <label for="a_isa">Podaj pierwszą liczbę:</label> <input type="number" id="a_isa">
+    <br><br>
+    <label for="b_isa">Podaj drugą liczbę:</label> <input type="number" id="b_isa">
+    <br><br>
+    <input type="button" value="DODAWANIE" onclick="suma()">
+    <input type="button" value="ODEJMOWANIE" onclick="roznica()">
+    <input type="button" value="MNOŻENIE" onclick="iloczyn()">
+    <input type="button" value="DZIELENIE" onclick="iloraz()">
+    <div id="wynik" style="margin-top:20px;"></div>
+    <script>
+        function suma() {
+            var a_isa = document.getElementById("a_isa").value;
+            var b_isa = document.getElementById("b_isa").value;
+            if (a_isa == "" || b_isa == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a_isa = parseFloat(a_isa);
+                b_isa = parseFloat(b_isa);
+                var suma_isa = a_isa + b_isa;
+                document.getElementById("wynik").innerHTML = "Wynik działania_isa wynosi: " + suma_isa;
+            }
+            //alert(a_isa); 
+            //console.log(a_isa); 
+        }
+        function roznica() {
+            var a_isa = document.getElementById("a_isa").value;
+            var b_isa = document.getElementById("b_isa").value;
+            if (a_isa == "" || b_isa == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a_isa = parseFloat(a_isa);
+                b_isa = parseFloat(b_isa);
+                var roznica_isa = a_isa - b_isa;
+                document.getElementById("wynik").innerHTML = "Wynik działania_isa wynosi: " + roznica_isa;
+            }
+        }
+        function iloczyn() {
+            var a_isa = document.getElementById("a_isa").value;
+            var b_isa = document.getElementById("b_isa").value;
+            if (a_isa == "" || b_isa == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a_isa = parseFloat(a_isa);
+                b_isa = parseFloat(b_isa);
+                var iloczyn_isa = a_isa * b_isa;
+                document.getElementById("wynik").innerHTML = "Wynik działania_isa wynosi: " + iloczyn_isa;
+            }
+        }
+
+        function iloraz() {
+            var a_isa = document.getElementById("a_isa").value;
+            var b_isa = document.getElementById("b_isa").value;
+            if (a_isa == "" || b_isa == "") {
+                document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+            } else {
+                a_isa = parseFloat(a_isa);
+                b_isa = parseFloat(b_isa);
+                if (b_isa == 0) {
+                    document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                }
+                else {
+                    var iloraz_isa = a_isa / b_isa;
+                    document.getElementById("wynik").innerHTML = "Wynik działania_isa wynosi: " + iloraz_isa;
+                }
+            }
+        } 
+    </script>
+</body>
+
+</html>
+    </textarea>
+</body>
+</html>
