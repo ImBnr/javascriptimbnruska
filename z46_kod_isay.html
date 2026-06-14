@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="100">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --font-size: 16px;
+        }
+        p{
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const nazwisko_isa = "isayeu";
+        var ile_razy_wyswielic_isa = (nazwisko_isa.length%4)+10;
+        var rozmiar_isa = (nazwisko_isa.length%3)+40;
+        document.documentElement.style.setProperty("--font-size", rozmiar_isa + "px");
+        if(ile_razy_wyswielic_isa%2==0)
+    {
+        document.write("<p>"+"Jest parzyste."+"</p>");
+        for(let i_isa = 0; ile_razy_wyswielic_isa>i_isa;i_isa++)
+    {
+        document.write("<p>"+"Sviatoslau"+"</p>");
+    }
+    }
+    else
+    {
+        document.write("<p>"+"Nie jest parzyste."+"</p>");
+    for(let i_isa = 0; ile_razy_wyswielic_isa>i_isa;i_isa++)
+    {
+        document.write("<p>" + " Isayeu " + " </p>");
+    }
+    }
+
+    </script>
+</body>
+</html>
+    </textarea>
+</body>
+</html>

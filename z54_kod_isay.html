@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="60" cols="100">
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 54</title>
+    <style>
+        body {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre id="output"></pre>
+
+    <script>
+
+        let nazwisko_isa = prompt("Podaj nazwisko:");
+        let imie_isa = prompt("Podaj imię:");
+
+        let liczba_liter_nazwiska_isa = nazwisko_isa.length;
+        let liczba_liter_imienia_isa = imie_isa.length;
+
+        let a_isa = (liczba_liter_nazwiska_isa % 4) + 5;
+        let b_isa = (liczba_liter_imienia_isa % 6) + 20;
+
+        let result_isa = "";
+
+        for (let i_isa = 0; i_isa < b_isa; i_isa++) {
+            result_isa += "*";
+        }
+        result_isa += "\n";
+
+        for (let i_isa = 0; i_isa < a_isa - 2; i_isa++) {
+            result_isa += "*";
+            for (let j_isa = 0; j_isa < b_isa - 2; j_isa++) {
+                result_isa += " ";
+            }
+            result_isa += "*\n";
+
+        }
+        for (let i_isa = 0; i_isa < b_isa; i_isa++) {
+            result_isa += "*";
+        }
+
+        document.getElementById("output").textContent = result_isa;
+    </script>
+
+</body>
+
+</html>
+    </textarea>
+</body>
+</html>

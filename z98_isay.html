@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title> Zadanie 82</title>
+    <script language="JavaScript">
+        function pushbutton() {
+            alert("Czesc !");
+        } 
+    </script>
+    <style>
+        .tekst{
+            color: green;
+            font-size: 1cm;
+        }
+        h1{
+            color:red;
+            font-size: 2cm;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Isayeu</h1>
+    <div class="tekst">
+        dzis = new Date()--> wpisz co oznacza ten zapis<br>
+
+        dzis = dzis.getHours()--> wpisz co oznacza ten zapis<br>
+
+        dzis = dzis.getMinutes()--> wpisz co oznacza ten zapis<br>
+
+        dzis = dzis.getMonth()+1--> wpisz co oznacza ten zapis<br>
+
+        dzis = dzis.getDate()--> wpisz co oznacza ten zapis<br>
+
+        dzis = dzis.getFullYear()--> wpisz co oznacza ten zapis<br>
+    </div>
+    Ostatnio zmodyfikowany
+    <script language="LiveScript">
+        document.write(document.lastModified, "<br>") 
+    </script>
+    <form>
+        <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+    </form>
+    <script language="JavaScript">
+        dzis = new Date()
+        document.write("<br>Aktualny czas : ", dzis.getHours(), ":", dzis.getMinutes())
+        document.write("<br>Aktualna data : ", dzis.getMonth() + 1, ",", dzis.getDate(), ",", dzis.getFullYear()); 
+    </script>
+</body>
+
+</html>

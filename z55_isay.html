@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a_isa = parseInt(prompt("Podaj a:"));
+    var b_isa = parseInt(prompt("Podaj b:"));
+
+    var wiersz_isa = "*";
+
+    for (var i = 1; i < b_isa; i++) {
+        wiersz_isa += "*";
+    }
+    document.write(wiersz_isa + "<br>");
+
+    var wiersz_isa = "*";
+    for (var i = 1; i < (b_isa - 1); i++) {
+        wiersz_isa += "&nbsp;&nbsp;";
+    }
+    wiersz_isa += "*";
+
+    for (var j = 1; j < (a_isa - 1); j++) {
+        document.write(wiersz_isa + "<br>");
+    }
+   for (var i = 1; i < b_isa; i++) {
+        wiersz_isa += "*";
+    }
+    document.write("<br>"+ wiersz_isa + "<br>");
+</script>
+</body>
+</html>

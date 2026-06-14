@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rodzaje pętli</title>
+</head>
+
+<body>
+
+    <h1>Rodzaje pętli</h1>
+
+    <h2>Pętla for</h2>
+    <p><b>Konstrukcja:</b></p>
+    <pre>
+for(inicjalizacja; warunek; zmiana)
+{
+    instrukcje;
+}
+    </pre>
+
+    <p><b>Opis:</b></p>
+    <p>
+        Pętla wykonywana określoną liczbę razy.
+        Najczęściej stosowana, gdy znamy liczbę powtórzeń.
+    </p>
+
+    <p><b>Schemat blokowy:</b></p>
+    <pre>
+Start
+  |
+Inicjalizacja
+  |
+Warunek?
+ /    \
+TAK   NIE
+ |      |
+Instr. Koniec
+ |
+Zmiana
+ |
+Powrót do warunku
+    </pre>
+
+    <hr>
+
+    <h2>Pętla while (kontrolowane wejście)</h2>
+    <p><b>Konstrukcja:</b></p>
+    <pre>
+while(warunek)
+{
+    instrukcje;
+}
+    </pre>
+
+    <p><b>Opis:</b></p>
+    <p>
+        Najpierw sprawdzany jest warunek.
+        Jeśli jest fałszywy, pętla nie wykona się ani razu.
+    </p>
+
+    <p><b>Schemat blokowy:</b></p>
+    <pre>
+Start
+  |
+Warunek?
+ /    \
+TAK   NIE
+ |      |
+Instr. Koniec
+ |
+Powrót do warunku
+    </pre>
+
+    <hr>
+
+    <h2>Pętla do while (kontrolowane wyjście)</h2>
+    <p><b>Konstrukcja:</b></p>
+    <pre>
+do
+{
+    instrukcje;
+}
+while(warunek);
+    </pre>
+
+    <p><b>Opis:</b></p>
+    <p>
+        Instrukcje wykonują się co najmniej jeden raz.
+        Warunek sprawdzany jest na końcu pętli.
+    </p>
+
+    <p><b>Schemat blokowy:</b></p>
+    <pre>
+Start
+  |
+Instrukcje
+  |
+Warunek?
+ /    \
+TAK   NIE
+ |      |
+Powrót Koniec
+    </pre>
+
+</body>
+
+</html>

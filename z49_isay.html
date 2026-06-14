@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do
+        {
+            var a_isa = parseFloat(prompt("Wpisz bok A"));
+            var b_isa = parseFloat(prompt("Wpisz bok B"));
+            var c_isa = parseFloat(prompt("Wpisz bok C"));
+            if (a_isa>0 && b_isa>0 && c_isa>0 && a_isa+c_isa>b_isa && c_isa+b_isa>a_isa)
+        {
+            document.write("Wpisane boki tworzą trójkąt.")
+            break;
+        }
+        else
+        {
+            alert("Złe wpisane boki")
+        }
+        }
+        while(true)
+    </script>
+</body>
+</html>
